@@ -31,7 +31,7 @@ jobs:
         run: |
           npm i
           cd frontend
-          npm i
+          npm i  --force
           npm run build
           cd ..
           pm2 stop 0

@@ -1,4 +1,4 @@
-name: Github-actions-example.js CI
+name: Github-actions-example CI
 
 on:
   push:
@@ -30,13 +30,12 @@ jobs:
       #- name: install packages for server
       #  run:
       #    npm i
-      - name: install packages and build frontend
-        run:
+      # - name: install packages and build frontend
+      - run:
           cd frontend
           npm i
           # npm run build
-      - name: restart server runner
-        run:
+      - run:
           pm2 stop 0
           pm2 start 0
           pm2 save

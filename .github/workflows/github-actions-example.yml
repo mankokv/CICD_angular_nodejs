@@ -32,8 +32,7 @@ jobs:
       #    npm i
       # - name: install packages and build frontend
       - run:
-          cd frontend
-          npm i
+          cd frontend && npm i
           # npm run build
       - run:
           pm2 stop 0

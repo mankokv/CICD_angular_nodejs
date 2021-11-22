@@ -13,16 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: dcodeIO/setup-node-nvm@master
+    - uses: actions/setup-node@v2
       with:
-        node-version: lts/*
+        node-version: '14'
     - run:
         npm i
         cd frontend
         pwd
         node -v
         npm i
-        #npm build
-        #npm run test
-        #npm run e2e
 

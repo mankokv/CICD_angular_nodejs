@@ -1,4 +1,4 @@
-name: Github-actions-example.js CI
+name: Github-actions-example CI
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install and npm run build
-        run:
+        run: |
           npm i
           cd frontend
           npm i

@@ -19,5 +19,7 @@ jobs:
     - run:
         npm i
         cd frontend
+        echo node -v >> node.v
+        echo pwd >> pwd.v
         npm i
 

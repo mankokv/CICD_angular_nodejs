@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: dcodeIO/setup-node-nvm@master
       with:
-        node-version: '16.13'
+        node-version: lts/*
     - run:
         npm i
         cd frontend

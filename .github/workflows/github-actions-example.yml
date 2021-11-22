@@ -28,10 +28,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install and npm run build
-    - run:
-        npm i
-        cd frontend
-        echo node -v >> node.v
-        echo pwd >> pwd.v
-        npm i
+        run:
+          npm i
+          cd frontend
+          echo node -v >> node.v
+          echo pwd >> pwd.v
+          npm i
 

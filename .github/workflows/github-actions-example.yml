@@ -19,6 +19,7 @@ jobs:
     - run:
         npm i
         cd frontend
+        pwd
         node -v
         npm i
         #npm build

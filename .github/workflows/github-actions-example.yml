@@ -34,7 +34,7 @@ jobs:
         run:
           cd frontend
           npm i
-          npm run build
+          # npm run build
       - name: restart server runner
         run:
           pm2 stop 0
